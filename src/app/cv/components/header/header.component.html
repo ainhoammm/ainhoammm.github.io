@@ -1,0 +1,43 @@
+<div class="mainDetails row">
+
+  <div id="name" class="col-xl-7 col-lg-6">
+
+      <img [src]="photo" class="rounded-circle photo" >
+      <div class="title">
+        <h1>{{personalInformation.firstName + ' ' + personalInformation.lastName}}</h1>
+        <h2>{{'title' | translate}}</h2>
+      </div>
+
+  </div>
+
+  <div id="contactDetails" class="col-xl-5 col-lg-6">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 contactItem">
+        <i class="bi bi-person"></i>
+        {{ personalInformation.dateOfBirth.date | date: 'dd/MM/yyyy' }}
+      </div>
+      <div class="col-sm-6 col-xs-12 contactItem">
+        <i class="bi bi-at"></i>
+        {{ personalInformation.emails[0] }}
+      </div>
+      <div class="col-sm-6 col-xs-12 contactItem">
+        <i class="bi bi-telephone"></i>
+        {{ personalInformation.phones[0].phoneNumber }}
+      </div>
+      <div class="col-sm-6 col-xs-12 contactItem">
+        <i class="bi bi-geo-alt"></i>
+        {{personalInformation.addresses[0].city }}
+        Bizkaia (España)
+      </div>
+      <div class="col-sm-6 col-xs-12 contactItem no-print">
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/ainhoammm"> Github</a>
+      </div>
+      <div class="col-sm-6 col-xs-12 contactItem no-print">
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/ainhoa-monje-ojinaga-35839b153/"> Linkedin</a>
+      </div>
+    </div>
+  </div>
+
+</div>

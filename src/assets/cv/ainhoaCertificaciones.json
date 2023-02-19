@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Google Project Management Certificate",
+      "organisationName": "Google",
+      "creationDate": "2022-11-08T14:02:51.023",
+      "date": 2022,
+      "description": "Consta de 6 cursos de 6 meses de duración. American Council on Education",
+      "image": "https://images.credly.com/size/340x340/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png",
+      "url": "https://www.credly.com/badges/8d6d0ce3-d277-4ee0-af38-2c3eb798d0cc/public_url"
+    },
+    {
+      "name": "Pyhton PCAP certification",
+      "organisationName": "Pyhton institute",
+      "date": 2022,
+      "description": null,
+      "image": "https://pythoninstitute.org/assets/61f11f7719dd3800707549.png",
+      "url": "assets/certs/AinhoaMonje-PCAP - Python-certificate.pdf"
+    },
+    {
+      "name": "Responsable experto en data (IFCT107)",
+      "organisationName": "Core Network ",
+      "creationDate": "2022-11-08T14:02:51.023",
+      "date": 2022,
+      "description": null,
+      "image": "assets/images/organisations/sepe.svg",
+      "url": "assets/certs/Diploma Respnsable experto en DATA.pdf"
+    },
+    {
+      "name": "Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean",
+      "organisationName": "Fundación telefónica",
+      "creationDate": "2022-11-08T14:02:51.023",
+      "date": 2022,
+      "description": null,
+      "image": "assets/images/organisations/fundaciontelefonica.jpg",
+      "url": "assets/certs/Certifícado Gestión de Proyectos con Metodologías Ágiles y Enfoques LEAN.pdf"
+    },
+    {
+      "name": "SQL for Data Science",
+      "organisationName": "University of California",
+      "creationDate": "2022-11-08T14:02:51.023",
+      "date": 2022,
+      "description": null,
+      "image": "assets/images/organisations/university_of_california.png",
+      "url": "assets/certs/SQL for Data Science.pdf"
+    },
+    {
+      "name": "Six Sigma Green Belt",
+      "organisationName": "University of Georgia",
+      "creationDate": "2022-11-08T14:02:51.023",
+      "date": 2020,
+      "description": "Consta de 4 cursos.",
+      "image": "https://images.credly.com/size/340x340/images/6124866b-8d20-4ab5-8638-11981348f128/Insignia_Lean_Six_Sigma_Green_Belt-04.png",
+      "url": "assets/certs/Certíficado oficial Six Sigma Green belt.pdf"
+    }
+]
+

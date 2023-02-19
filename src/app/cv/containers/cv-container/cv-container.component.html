@@ -1,0 +1,71 @@
+
+<div id="cv">
+
+  <div class="container my-4 shadow">
+
+    <app-header
+      [photo]="cv.userPicture"
+      [personalInformation]="cv.profile.personalInformation"
+    ></app-header>
+
+    <app-section *ngFor="let section of sections"
+                 class="row px-4"
+                 [section]="section">
+    </app-section>
+
+
+    <section class="row px-4">
+      <div class="sectionTitle col-md-3">
+        <h1>{{ 'certifications' | translate }}</h1>
+      </div>
+      <div class="sectionContent col-md-9 row">
+
+          <app-certification *ngFor="let certification of certifications"
+                             class="col px-4"
+                             [certification]="certification">
+          </app-certification>
+
+      </div>
+    </section>
+
+
+
+    <section class="row px-4" *ngFor="let customSection of cv.profile.customSections">
+      <div class="sectionTitle col-md-3">
+        <h1>{{ customSection.title }}</h1>
+      </div>
+      <div class="sectionContent col-md-9">
+        <article *ngFor="let record of customSection.records">
+          <p class="subDesc mt-2" [innerHTML]="record.content"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="row px-4 pb-5">
+      <div class="sectionTitle col-md-3">
+        <h1>{{ 'languageSkills' | translate }}</h1>
+      </div>
+      <div class="sectionContent col-md-9 row">
+        <article [class]="'col-'+12/cv.profile.languageSkills.otherLanguages.length" *ngFor="let lang of cv.profile.languageSkills.otherLanguages">
+          <h2>{{ 'LANG.' + lang.language | translate }}</h2>
+          <div>{{ 'LANG.listening' | translate }}: {{ lang.listening }}</div>
+          <div>{{ 'LANG.reading' | translate }}: {{ lang.reading }}</div>
+          <div>{{ 'LANG.writing' | translate }}: {{ lang.writing }}</div>
+          <div>{{ 'LANG.spokenInteraction' | translate }}: {{ lang.spokenInteraction }}</div>
+          <!--
+          <div>{{ 'LANG.spokenProduction' | translate }}: {{ lang.spokenProduction }}</div>
+          -->
+        </article>
+      </div>
+    </section>
+
+
+  </div>
+
+</div>
+
+
+<div class="btn btn-primary no-print" (click)="print()">
+  <i class="bi bi-printer"></i>
+  <div>{{ 'nav.print' | translate }}</div>
+</div>

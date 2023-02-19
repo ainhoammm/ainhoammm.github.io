@@ -1,0 +1,35 @@
+
+<div class="sectionTitle col-md-3">
+  <h1>{{section.name | translate}}</h1>
+</div>
+<div class="sectionContent col-md-9">
+  <article *ngFor="let item of section.items" class="mb-5">
+    <span *ngIf="item.startDate && item.endDate" class="periodo">{{item.startDate.date | date: 'yyyy'}} - {{item.endDate.date | date: 'yyyy'}}</span>
+    <span *ngIf="item.date" class="periodo">{{item.date}}</span>
+
+    <div *ngIf="item.qualification">
+      <h2 *ngIf="!item.url">{{ item.qualification }}</h2>
+      <h2 *ngIf="item.url">
+        <a class="link" [href]="item.url">{{ item.qualification }}</a>
+      </h2>
+    </div>
+
+    <div *ngIf="item.occupation && item.occupation.label">
+      <h2 *ngIf="!item.url">{{ item.occupation.label }}</h2>
+    </div>
+
+    <p class="subDetails" *ngIf="item.organisationName || item.employer">
+      <img class="organisation-logo"
+           [src]="'assets/images/organisations/'+ (item.organisationName ? item.organisationName : item.employer) +'.png'"
+           (error)="getErrorImage($event)">
+      ({{ item.organisationName ? item.organisationName : item.employer}})
+    </p>
+    <p class="subDesc mt-2" [innerHTML]="item.description ? item.description : item.mainActivities"></p>
+
+    <!--todo: tecnologias-->
+
+    <!--
+    <app-tecnologies [text]="item.description ? item.description : item.mainActivities"></app-tecnologies>
+    -->
+  </article>
+</div>
