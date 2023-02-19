@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "webainhoamonje"
+  "defaultProject": "webainhoamonje",
+  "cli": {
+    "analytics": false
+  }
 }
