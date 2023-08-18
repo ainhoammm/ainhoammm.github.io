@@ -7,9 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "scully": "npx scully --",
-    "scully:serve": "npx scully serve --",
-    "scully:all": "npm run build && npx scully serve"
+    "scully:scan": "npx scully --scanRoutes",
+    "scully:serve": "npx scully serve",
+    "scully": "npm run build && npm run scully:scan && npm run scully:serve",
+    "scully:prod": "npm run build && npx scully -- --nw"
   },
   "private": true,
   "dependencies": {
