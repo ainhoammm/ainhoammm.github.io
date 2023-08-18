@@ -1,7 +1,5 @@
 # Webainhoamonje
 
-El contenido estatico con scully se copia a la carpeta docs una vez generado para cargarlo en github pages.
-
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
