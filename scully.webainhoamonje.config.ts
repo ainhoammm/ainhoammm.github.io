@@ -4,6 +4,7 @@ import { ScullyConfig } from '@scullyio/scully';
 import '@scullyio/scully-plugin-puppeteer'
 
 export const config: ScullyConfig = {
+  puppeteerLaunchOptions: {args: ['--no-sandbox', '--disable-setuid--sandbox']},
   projectRoot: "./src",
   projectName: "webainhoamonje",
   // add spsModulePath when using de Scully Platform Server,
